@@ -1,0 +1,11 @@
+body {
+  cursor : default;
+}
+
+* {
+  border-radius : 0 !important;
+}
+
+.navbar-brand {
+  color : #fff !important;
+}

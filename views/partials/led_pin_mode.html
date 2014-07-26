@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p>
+      <button type="button" class="btn btn-primary arduino-led-pin-mode">Set pin mode</button>
+    </p>
+<pre><code class="language-javascript">// Firmata
+
+board.pinMode(9, board.MODES.PWM);
+board.pinMode(10, board.MODES.PWM);
+board.pinMode(11, board.MODES.PWM);
+
+// Johnny-Five
+
+led9  = new five.Led(9);
+led10 = new five.Led(10);
+led11 = new five.Led(11);
+</code></pre>
+  </div>
+</div>

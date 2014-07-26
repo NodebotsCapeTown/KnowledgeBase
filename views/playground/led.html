@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> styles}}
+  </head>
+  <body>
+    {{> header}}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>LED</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+          <p>
+            Light-Emitting Diodes are like mini, low-powered light bulbs. They have two (or sometimes more) pins,
+            and as they are diodes, these pins allow current to travel in one direction only.This direction is indicated
+            in two ways:
+          </p>
+          <ol>
+            <li>The anode (or pin that goes towards positive) is longer.</li>
+            <li>The cathode (or pin that goes to ground) is on the flat side of the “bulb”.</li>
+          </ol>
+          <p>
+          <blockquote>
+            More often than not, you’ll need to use these in combination with resistors, or they will quickly burn out.
+          </blockquote>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img src="/img/led.png"/>
+        </div>
+      </div>
+      {{> hr }}
+      {{> connect }}
+      {{> hr }}
+      {{> led_pin_mode }}
+      {{> hr }}
+      {{> led_on_off }}
+    </div>
+    {{> scripts}}
+  </body>
+</html>

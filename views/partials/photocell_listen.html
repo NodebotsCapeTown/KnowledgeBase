@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p>
+      <div class="row">
+        <div class="col-md-2">
+          <input type="text" class="form-control arduino-photocell-value" />
+        </div>
+        <div class="col-md-6">
+          <button type="button" class="btn btn-primary arduino-photocell-listen">Listen</button>
+        </div>
+      </div>
+    </p>
+<pre><code class="language-javascript">// Firmata
+
+board.analogRead(14, function (value) {
+  console.log("photocell: " + value);
+});
+
+// Johnny-Five
+
+photocell = new five.Sensor({
+  "pin"  : "A0",
+  "freq" : 250
+});
+
+photocell.on("data", function() {
+  console.log("photocell: " + this.value);
+});
+</code></pre>
+  </div>
+</div>

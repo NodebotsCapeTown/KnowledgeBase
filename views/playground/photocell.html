@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> styles}}
+  </head>
+  <body>
+    {{> header}}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Photocell</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+          <p>
+            Photocells are analog sensors which provide variable resistance based on the amount of ambient light.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img src="/img/photocell.png"/>
+        </div>
+      </div>
+      {{> hr }}
+      {{> connect }}
+      {{> hr }}
+      {{> photocell_listen }}
+    </div>
+    {{> scripts}}
+  </body>
+</html>

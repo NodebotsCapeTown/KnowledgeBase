@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p>
+      <button type="button" class="btn btn-primary arduino-connect">Connect</button>
+    </p>
+<pre><code class="language-javascript">// Firmata
+
+var firmata = require("firmata");
+var port = "/dev/tty.usbmodem1411";
+
+var board = new firmata.Board(port, function () {
+  console.log("connected to arduino");
+});
+
+// Johnny-Five
+
+var five = require("johnny-five");
+var board = new five.Board();
+
+board.on("ready", function() {
+  console.log("connected to arduino");
+});
+</code></pre>
+  </div>
+</div>
